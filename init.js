@@ -17,5 +17,5 @@ UiRouter = {
         return Blaze.toHTML(Template[templName]);
     }
   }
-}
+};
 
