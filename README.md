@@ -5,48 +5,52 @@ meteor-angular-ui-router
 
 ## Install
 ```
-mrt add angular-ui-router
-```
-
-## v0.3.0 add support for Meteor 0.8.0 (Blaze).
-
-Meteor's new rendering engine Blaze is not API-compatible with the old one Spark.
-You need to change your template usage like this:
-
-#### your router definition:
-
-change
-```
-template: Template['state1']
-```
-to
-```
-template: UiRouter.template('state1')
-```
-
-> `UiRouter.template()` is a helper function created to ease your transition.
-
-## v0.2.0 breaking change
-
-* Add support for [angularite](https://github.com/ccll/meteor-angularite), a lightweight meteor-angular bridge.
-* Dependency on ngMeteor changed to a 'weak' one. Which means if you like to stick with ngMeteor, you need to add ngMeteor dependency explicitly in __your__ app's smart.json.
-
-
-## Use with angularite
-```
-var app = Angularite.module('myApp', ['ui.router']);
+meteor add urigo:angular-ui-router
 ```
 
 ## Live demo
-Demo: [http://angular-ui-router-demo.meteor.com/](http://angular-ui-router-demo.meteor.com/)
+Demo: [http://angularjs.meteor.com/](http://angularjs.meteor.com/)
 
-Code: [https://github.com/ccll/meteor-angular-ui-router-demo](https://github.com/ccll/meteor-angular-ui-router-demo)
+Code: [https://github.com/Urigo/ngmeteor/tree/master/docs/angular-meteor](https://github.com/Urigo/ngmeteor/tree/master/docs/angular-meteor)
 
 ## Usage
 
+### app.js
+```
+angular.module('myApp', ['ngMeteor', 'ui.router']);
+
+Meteor.startup(function () {
+  angular.bootstrap(document, ['myApp']);
+});
+
+angular.module("myApp").config(['$stateProvider', '$urlRouterProvider',
+    function ($stateProvider, $urlRouterProvider) {
+        $urlRouterProvider.otherwise("/");
+
+        $stateProvider
+            .state('home', {
+                url: "/",
+                template: UiRouter.template('home.html')
+            })
+            .state('state1', {
+                url: "/state1",
+                template: UiRouter.template('state1.html')
+            })
+            .state('state1.list', {
+                url: "/list",
+                template: UiRouter.template('state1.list1.html')
+            })
+            .state('state2', {
+                url: "/state2",
+                template: UiRouter.template('state2.html')
+            });
+    }
+]);
+```
+
 ### partials/state1.html
 ```
-<template name="state1">
+<template name="state1.html">
     <div>
         <h1>State 1</h1>
 
@@ -61,31 +65,4 @@ Code: [https://github.com/ccll/meteor-angular-ui-router-demo](https://github.com
 
     </div>
 </template>
-```
-
-### app.js
-```
-ngMeteor.config(['$stateProvider', '$urlRouterProvider',
-    function ($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise("/");
-
-        $stateProvider
-            .state('home', {
-                url: "/",
-                template: UiRouter.template('home')
-            })
-            .state('state1', {
-                url: "/state1",
-                template: UiRouter.template('state1')
-            })
-            .state('state1.list', {
-                url: "/list",
-                template: UiRouter.template('state1.list1')
-            })
-            .state('state2', {
-                url: "/state2",
-                template: UiRouter.template('state2')
-            });
-    }
-]);
 ```
