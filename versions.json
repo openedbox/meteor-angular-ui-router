@@ -21,6 +21,10 @@
       "1.0.0"
     ],
     [
+      "ddp",
+      "1.0.8-rc0"
+    ],
+    [
       "deps",
       "1.0.0"
     ],
@@ -54,7 +58,7 @@
     ],
     [
       "livedata",
-      "1.0.0"
+      "1.0.8-rc1"
     ],
     [
       "logging",
@@ -69,8 +73,16 @@
       "1.0.0"
     ],
     [
+      "mongo",
+      "1.0.5"
+    ],
+    [
       "mongo-livedata",
-      "1.0.1"
+      "1.0.4"
+    ],
+    [
+      "mquandalle:bower",
+      "0.1.11"
     ],
     [
       "observe-sequence",
@@ -97,8 +109,12 @@
       "1.0.0"
     ],
     [
+      "tracker",
+      "1.0.2-rc0"
+    ],
+    [
       "ui",
-      "1.0.1-rc0"
+      "1.0.1"
     ],
     [
       "underscore",
@@ -106,10 +122,10 @@
     ],
     [
       "urigo:ngmeteor",
-      "0.2.0"
+      "0.3.0"
     ]
   ],
   "pluginDependencies": [],
-  "toolVersion": "meteor-tool@1.0.26",
+  "toolVersion": "meteor-tool@1.0.31",
   "format": "1.0"
 }
