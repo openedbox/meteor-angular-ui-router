@@ -11,13 +11,13 @@ meteor add urigo:angular-ui-router
 ## Live demo
 Demo: [http://angularjs.meteor.com/](http://angularjs.meteor.com/)
 
-Code: [https://github.com/Urigo/ngmeteor/tree/master/docs/angular-meteor](https://github.com/Urigo/ngmeteor/tree/master/docs/angular-meteor)
+Code: [https://github.com/Urigo/angular-meteor/tree/master/docs/angular-meteor](https://github.com/Urigo/angular-meteor/tree/master/docs/angular-meteor)
 
 ## Usage
 
 ### app.js
 ```
-angular.module('myApp', ['ngMeteor', 'ui.router']);
+angular.module('myApp', ['angular-meteor', 'ui.router']);
 
 Meteor.startup(function () {
   angular.bootstrap(document, ['myApp']);

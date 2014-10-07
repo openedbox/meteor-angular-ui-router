@@ -13,7 +13,7 @@ Package.on_use(function(api) {
 
   api.export('UiRouter', 'client');
 
-  api.use('urigo:ngmeteor@0.3.0', 'client');
+  api.use('urigo:angular@0.4.0', 'client');
 
   // Install bower components.
   api.addFiles('smart.json', 'client');
