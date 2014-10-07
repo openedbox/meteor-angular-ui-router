@@ -21,12 +21,8 @@
       "1.0.0"
     ],
     [
-      "ddp",
-      "1.0.8-rc0"
-    ],
-    [
       "deps",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "ejson",
@@ -42,7 +38,7 @@
     ],
     [
       "htmljs",
-      "1.0.0-cordova1"
+      "1.0.0"
     ],
     [
       "id-map",
@@ -58,11 +54,11 @@
     ],
     [
       "livedata",
-      "1.0.8-rc1"
+      "1.0.7"
     ],
     [
       "logging",
-      "1.0.0"
+      "1.0.2"
     ],
     [
       "meteor",
@@ -70,15 +66,11 @@
     ],
     [
       "minimongo",
-      "1.0.0"
-    ],
-    [
-      "mongo",
-      "1.0.5"
+      "1.0.1"
     ],
     [
       "mongo-livedata",
-      "1.0.4"
+      "1.0.3"
     ],
     [
       "mquandalle:bower",
@@ -86,7 +78,7 @@
     ],
     [
       "observe-sequence",
-      "1.0.0"
+      "1.0.1"
     ],
     [
       "ordered-dict",
@@ -109,23 +101,19 @@
       "1.0.0"
     ],
     [
-      "tracker",
-      "1.0.2-rc0"
-    ],
-    [
       "ui",
-      "1.0.1"
+      "1.0.0"
     ],
     [
       "underscore",
       "1.0.0"
     ],
     [
-      "urigo:ngmeteor",
-      "0.3.0"
+      "urigo:angular",
+      "0.4.0"
     ]
   ],
   "pluginDependencies": [],
-  "toolVersion": "meteor-tool@1.0.31",
+  "toolVersion": "meteor-tool@1.0.33",
   "format": "1.0"
 }
