@@ -8,6 +8,7 @@ meteor-angular-ui-router
 meteor add urigo:angular-ui-router
 ```
 
+Depends on [angular-meteor](https://github.com/Urigo/angular-meteor)
 ## Live demo
 Demo: [http://angularjs.meteor.com/](http://angularjs.meteor.com/)
 
