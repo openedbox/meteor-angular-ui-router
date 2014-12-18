@@ -1,6 +1,6 @@
 Package.describe({
   summary: "angular-ui-router, the de-facto solution to flexible routing with nested views.",
-  version: "0.6.1",
+  version: "0.6.2",
   git: "https://github.com/Urigo/meteor-angular-ui-router.git"
 });
 
@@ -13,7 +13,7 @@ Package.on_use(function(api) {
 
   api.export('UiRouter', 'client');
 
-  api.use('urigo:angular@0.4.8', 'client');
+  api.use('urigo:angular@0.5.9', 'client');
 
   // Install bower components.
   api.addFiles('smart.json', 'client');

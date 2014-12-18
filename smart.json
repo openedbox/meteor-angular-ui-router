@@ -4,11 +4,11 @@
     "homepage": "https://github.com/Urigo/meteor-angular-ui-router",
     "author": "ccll_cailei <cailei@live.com> & urigo <uri.goldshtein@gmail.com>",
     "git": "https://github.com/Urigo/meteor-angular-ui-router.git",
-    "version": "0.6.1",
+    "version": "0.6.2",
     "packages": {
       "bower": {}
     },
     "bower": {
-      "angular-ui-router": "0.2.11"
+      "angular-ui-router": "0.2.13"
     }
 }
